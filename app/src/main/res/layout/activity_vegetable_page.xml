@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundGrey"
+    tools:context=".VegetablePage"
+    android:id="@+id/vegeLayout">
+
+    <include
+        android:id="@+id/growMateToolbar"
+        layout="@layout/layout_toolbar">
+    </include>
+
+    <ScrollView
+        android:id="@+id/dropdownScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/vegetableFragmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vegetableHeading"
+                style="@style/ActivityHeadings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_below="@+id/vegetableHeading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/cadetBlue"/>
+
+            <Button
+                android:id="@+id/btnDisplayPlantDateFragment"
+                android:background="@drawable/btn_style_square"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/btn_display_calculate_dates"/>
+
+            <fragment
+                android:id="@+id/plantDatesFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDisplayPlantDateFragment"
+                android:name="com.example.sd6501_assignment1.PlantDatesFragment" />
+
+            <Button
+                android:id="@+id/btnDisplayGrowingInfoFragment"
+                android:background="@drawable/btn_style_square"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plantDatesFragment"
+                android:text="@string/btn_display_growing_info" />
+
+            <fragment
+                android:id="@+id/growingInfoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDisplayGrowingInfoFragment"
+                android:name="com.example.sd6501_assignment1.GrowingInfoFragment" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAccessMyPlants"
+        android:background="@drawable/btn_style_square_alternate"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_option_my_plants" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txtViewDisplayPlantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/cadetBlue" />
+
+    <TextView
+        android:id="@+id/txtViewDateTimePlanted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewDisplayPlantName"
+        android:layout_alignStart="@+id/txtViewDisplayPlantName"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/cadetBlue" />
+
+    <TextView
+        android:id="@+id/txtViewDisplayDateTimePlanted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtViewDateTimePlanted"
+        android:layout_toEndOf="@+id/txtViewDateTimePlanted"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/cadetBlue" />
+
+</RelativeLayout>

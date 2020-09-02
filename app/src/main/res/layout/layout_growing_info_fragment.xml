@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/growingInfoFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundGrey"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/growInfoWhenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtViewGrowingInfoWhen"
+            style="@style/UserHints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text="@string/txt_info_when" />
+
+        <TextView
+            android:id="@+id/txtViewGrowingInfoDisplayWhen"
+            style="@style/UserHints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtViewGrowingInfoWhen"
+            android:layout_marginStart="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/growInfoWhereLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/growInfoWhenLayout"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/txtViewGrowingInfoWhere"
+            style="@style/UserHints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text="@string/txt_info_where" />
+
+        <TextView
+            android:id="@+id/txtViewGrowingInfoDisplayWhere"
+            style="@style/UserHints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtViewGrowingInfoWhere"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/growInfoHowLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/growInfoWhereLayout"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/txtViewGrowingInfoHow"
+            style="@style/UserHints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text="@string/txt_info_how" />
+
+        <TextView
+            android:id="@+id/txtViewGrowingInfoDisplayHow"
+            style="@style/UserHints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtViewGrowingInfoHow"
+            android:layout_marginStart="23dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/growInfoCareLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/growInfoHowLayout"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/txtViewGrowingInfoCare"
+            style="@style/UserHints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text="@string/txt_info_care" />
+
+        <TextView
+            android:id="@+id/txtViewGrowingInfoDisplayCare"
+            style="@style/UserHints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtViewGrowingInfoCare"
+            android:layout_marginStart="21dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/growInfoCareLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/cadetBlue" />
+
+</RelativeLayout>

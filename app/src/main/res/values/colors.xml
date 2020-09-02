@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="cancelRed">#B00020</color>
+    <color name="white">#FFFFFF</color>
+    <color name="slate">#EAE3EA</color>
+    <color name="backgroundGrey">#E6E6E6</color>
+    <color name="blueBlack">#021C1E</color>
+    <color name="cadetBlue">#004445</color>
+    <color name="rain">#2C7873</color>
+    <color name="ocean">#1FB58F</color>
+
+</resources>

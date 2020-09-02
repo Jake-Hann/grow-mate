@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGrey"
+    tools:context=".VegetableMenu"
+    android:id="@+id/vegetableMenuLayout">
+
+    <include
+        android:id="@+id/growMateToolbar"
+        layout="@layout/layout_toolbar">
+    </include>
+
+    <TextView
+        android:id="@+id/vegetableMenuHeading"
+        style="@style/ActivityHeadings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/growMateToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/heading_vegetable_menu" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="350dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/vegetableMenuHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/cadetBlue"/>
+
+    <fragment
+        android:id="@+id/vegetableGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:name="com.example.sd6501_assignment1.VegetableMenuFragment"/>
+
+</RelativeLayout>

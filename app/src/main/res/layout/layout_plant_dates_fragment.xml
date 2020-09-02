@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/plantDatesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:background="@color/backgroundGrey">
+
+    <TextView
+        android:id="@+id/userInstructionPlantDates"
+        style="@style/UserHints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:text="@string/txt_dates_instruction" />
+
+    <ImageView
+        android:id="@+id/iconGerminated"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/userInstructionPlantDates"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/image_icon_germinated"
+        app:srcCompat="@drawable/ic_germinated" />
+
+    <TextView
+        android:id="@+id/txtViewGerminate"
+        style="@style/UserHints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iconGerminated"
+        android:layout_alignBottom="@+id/iconGerminated"
+        android:layout_marginStart="10dp"
+        android:text="@string/txt_germinated" />
+
+    <ImageView
+        android:id="@+id/iconTransplant"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/iconGerminated"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/image_icon_transplant"
+        app:srcCompat="@drawable/ic_transplant" />
+
+    <TextView
+        android:id="@+id/txtViewTransplant"
+        style="@style/UserHints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iconTransplant"
+        android:layout_alignBottom="@+id/iconTransplant"
+        android:layout_marginStart="10dp"
+        android:text="@string/txt_transplant" />
+
+    <ImageView
+        android:id="@+id/iconHarvest"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/iconTransplant"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/image_icon_harvest"
+        app:srcCompat="@drawable/ic_harvest" />
+
+    <TextView
+        android:id="@+id/txtViewHarvest"
+        style="@style/UserHints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iconHarvest"
+        android:layout_alignBottom="@+id/iconHarvest"
+        android:layout_marginStart="10dp"
+        android:text="@string/txt_harvest" />
+
+    <TextView
+        android:id="@+id/txtViewGerminationDate"
+        style="@style/UserHints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/txtViewGerminate"
+        android:text="@string/hint_day_month_year" />
+
+    <TextView
+        android:id="@+id/txtViewTransplantDate"
+        style="@style/UserHints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/txtViewTransplant"
+        android:text="@string/hint_day_month_year" />
+
+    <TextView
+        android:id="@+id/txtViewHarvestDate"
+        style="@style/UserHints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/txtViewHarvest"
+
+        android:text="@string/hint_day_month_year" />
+
+    <RelativeLayout
+        android:id="@+id/plantTodayBtnLayout"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/iconHarvest"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_style_rounded_alternate">
+
+        <ImageView
+            android:id="@+id/iconPlantToday"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:contentDescription="@string/image_icon_plant_today"
+            app:srcCompat="@drawable/plant_today" />
+
+        <TextView
+            android:id="@+id/txtViewPlantToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconPlantToday"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/backgroundGrey"
+            android:text="@string/btn_plant_today" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addToMyPlantsLayout"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/plantTodayBtnLayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_style_rounded_alternate">
+
+        <ImageView
+            android:id="@+id/iconAdd"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/image_icon_add"
+            app:srcCompat="@drawable/ic_add_circle_" />
+
+        <TextView
+            android:id="@+id/txtViewAddToDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconAdd"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/backgroundGrey"
+            android:text="@string/btn_add_plant" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
