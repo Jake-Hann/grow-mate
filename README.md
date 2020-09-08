@@ -1,6 +1,6 @@
 # Grow Mate
 
-### Android app developed with Java and Android Studio. The app allows the user to select from a variety of vegetables and gives them the option to view growing information about that vegetable and calculate the germination dates etc. The app also features an SQLite database that allows the user to save, edit and delete growing information. 
+Android app developed with Java and Android Studio. The app allows the user to select from a variety of vegetables and gives them the option to view growing information about that vegetable and calculate the germination dates etc. The app also features an SQLite database that allows the user to save, edit and delete growing information. 
 
 ### Grow Mate screen shots:
 ![ScreenShot](https://user-images.githubusercontent.com/55943667/92076191-371fb880-ee0e-11ea-8b7a-fffeb75d069a.png)
